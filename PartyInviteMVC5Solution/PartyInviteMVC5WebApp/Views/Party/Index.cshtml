@@ -1,0 +1,24 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var greet = "Welcome" + DateTime.Now;
+}
+
+<html>
+<head>
+    <meta name="viewport" />
+    <title> </title>
+</head>
+<body>
+    <div>
+        <h1>   THis is the party Page   </h1>
+        <h2>@ViewBag.greet</h2>
+    </div>
+    <div>
+        <h3>
+            We are throwing a party for You(2019)..
+        </h3>
+        <h4>@Html.ActionLink("RSVP","RSVPForm")</h4>
+    </div>
+</body>
+</html>
+
